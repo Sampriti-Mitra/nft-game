@@ -7,7 +7,7 @@ import './Arena.css';
 /*
  * We pass in our characterNFT metadata so we can a cool card in our UI
  */
-const Arena = ({ characterNFT }) => {
+const Arena = ({ characterNFT, setCharacterNFT }) => {
   // State
   const [gameContract, setGameContract] = useState(null);
 /*
