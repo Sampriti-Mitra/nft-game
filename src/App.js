@@ -4,6 +4,7 @@ import './App.css';
 import { CONTRACT_ADDRESS, transformCharacterData } from './constants';
 import myEpicGameLogic from './utils/MyEpicGameLogic.json';
 import { ethers } from 'ethers';
+import Arena from './Components/Arena';
 import twitterLogo from './assets/twitter-logo.svg';
 
 // Constants
@@ -142,6 +143,9 @@ const renderContent = () => {
      */
   } else if (currentAccount && !characterNFT) {
     return <SelectCharacter setCharacterNFT={setCharacterNFT} />;
+  }
+  else if (currentAccount && characterNFT) {
+    return <Arena characterNFT={characterNFT} setCharacterNFT={setCharacterNFT} />;
   }
 };
 
