@@ -8,7 +8,7 @@ import Arena from './Components/Arena';
 import twitterLogo from './assets/twitter-logo.svg';
 
 // Constants
-const TWITTER_HANDLE = '_buildspace';
+const TWITTER_HANDLE = 'SampritiMitra';
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
 
 const App = () => {
@@ -164,7 +164,7 @@ const renderContent = () => {
             href={TWITTER_LINK}
             target="_blank"
             rel="noreferrer"
-          >{`built with @${TWITTER_HANDLE}`}</a>
+          >{`@${TWITTER_HANDLE}`}</a>
         </div>
       </div>
     </div>
