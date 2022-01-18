@@ -1,6 +1,6 @@
 .arena-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   margin: auto;
   color: white;
@@ -30,6 +30,7 @@
   background-size: 600% 600%;
   animation: gradient-animation 8s ease infinite;
   margin-bottom: 25px;
+  margin-left: 20px;
 }
 
 .boss-content h2 {
@@ -133,7 +134,7 @@
   width: 64px;
   height: 64px;
   background-color: gray;
-  margin-right: 15px;
+  /* margin-right: 15px; */
   border-radius: 8px;
 }
 
@@ -148,9 +149,8 @@
   justify-content: center;
 }
 
-.attack-container button {
-  height: 60px;
-  font-size: 18px;
+.attack-container .cta-button{
+  min-height: 100px; 
   background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   background-size: 200% 200%;
   animation: gradient-animation 4s ease infinite;
