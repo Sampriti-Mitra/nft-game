@@ -9,8 +9,7 @@
 .arena-container .boss-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  margin-bottom: 50px;
+  justify-content: left;
 }
 
 .boss-container .boss-content {
@@ -146,19 +145,18 @@
 .players-container .attack-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 .attack-container .cta-button{
   min-height: 100px; 
   background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  background-size: 200% 200%;
+  background-size: 100% 100%;
   animation: gradient-animation 4s ease infinite;
 }
 
 /* Effects */
 .boss-container .attacking {
-  animation: shake 1.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) both infinite;
+  animation: shake 1.2s cubic-bezier(0.36, 0.57, 0.19, 0.50) both infinite;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
   perspective: 1000px;
